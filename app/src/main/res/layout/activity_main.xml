@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/teal_200">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        
+        <ImageButton
+            android:id="@+id/bhujang_btn"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:src="@drawable/bhujang_thumbnail"
+            />
+
+        <ImageButton
+            android:id="@+id/parvatasan_btn"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:src="@drawable/paravatasana_tumbnail"
+
+            />
+
+        <ImageButton
+            android:id="@+id/padmasan_btn"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:src="@drawable/padmasana_thumnail"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:src="@drawable/placeholder_image"
+        />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Welcome to the yoga app"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/detail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Select any of the asanas given above to start"
+            android:textSize="20sp"
+            android:layout_margin="10sp"
+
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
